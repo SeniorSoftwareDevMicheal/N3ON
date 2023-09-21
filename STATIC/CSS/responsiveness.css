@@ -1,0 +1,120 @@
+@media only screen and (max-width: 1320px) {
+    header{
+        padding: 0 50px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    header{
+        padding: 0 30px;
+    }
+
+    
+}
+
+@media only screen and (max-width: 900px) {
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .logo img{
+        width: 75%;
+        height: 75%;
+    }
+    .hamburger h1 {
+        font-size: 1rem;
+        /* width: 30px; */
+        /* height: 3px; */
+        color: white  ;
+        /* margin: 6px 0; */
+    }
+    .nav-bar{
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: transparent;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    .nav-bar.active{
+        height: 225px;
+    }
+    .nav-bar ul {
+        display: flex;
+        flex-direction: column;
+        text-align: right; /* Align the content to the right */
+        transition: 0.5s; 
+    }
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+    .nav-bar ul li a{
+         margin-bottom: 10px ;
+    }
+
+    .back-video {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* This will make the video cover the entire container */
+    }
+
+    .top h1{
+        font-size: 1rem;
+    }
+    
+    .newsletter{
+        width: 100vw;
+        height: 33vh;
+    }
+
+    .f-button,
+    .f-email{
+        height: 8vh;
+    }
+
+    .footer{
+        width: 100vw;
+        height: 30vh;
+    }
+    
+    .footer-1{
+        flex-direction: column;
+    }
+
+    .footer-2{
+        flex-direction: column;
+    }
+
+    .footer-1 a{
+        font-size: 0.9rem;
+        color: #fff;
+        text-decoration: none;
+        padding-right: 15px;
+    }
+
+    .footer-2 a{
+        text-align: right;
+        padding-right: 0px;
+    }
+
+}
+
+
+/* @media (min-aspect-ratio: 16/9) { 
+    .back-video{
+        margin: 0 auto;
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) { 
+    .back-video{
+        margin: auto 0;
+        width: auto;
+        height: 100%;
+    }
+} */
